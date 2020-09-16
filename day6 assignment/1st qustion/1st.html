@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>1st question</title>
+  <style>
+    * {
+      margin: 0px;
+      padding: 0px;
+    }
+
+    .data {
+      height: 100vh;
+      width: 80%;
+      background-color: lightgray;
+      margin-left: 10%;
+      margin-top: 50px;
+      padding: 20px;
+      display: inline-block;
+    }
+
+    .table {
+      width: 100%;
+      margin-top: 20px;
+      font-family: calibri;
+
+    }
+
+    th,
+    td {
+      height: 40px;
+      text-align: center;
+      padding: 5px;
+
+    }
+
+    .form {
+      margin-top: 20px;
+      right: 20px;
+
+    }
+
+    input {
+      height: 40px;
+      width: 250px;
+      text-indent: 20px;
+    }
+
+    button {
+      padding: 10px;
+    }
+  </style>
+
+</head>
+
+<body>
+  <div class="data">
+    <h1>People</h1>
+    <div class="form">
+      <input type="text" placeholder="Search here Name or City..." id="search" onkeyup="search()" />
+    </div>
+
+    <br>
+
+    <hr>
+    <table border="1" class="table" cellspacing="0">
+      <thead>
+        <tr>
+          <th>Sr no</th>
+          <th>Name</th>
+          <th>Age</th>
+          <th>City</th>
+          <th>Salary</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody class="tdata" id="tdata"></tbody>
+    </table>
+  </div>
+  </div>
+
+  <script src="1st.js"></script>
+</body>
+
+</html>
